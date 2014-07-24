@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "A Property-Managment app",
   "main": "manage.js",
+  "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
   "scripts": {
     "test": "mocha test --recursive -R spec"
+    "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,11 @@
     "url": "https://github.com/MikeBBarreiro/property-manager/issues"
   },
   "homepage": "https://github.com/MikeBBarreiro/property-manager",
+  "config": {
+    "blanket": {
+      "pattern": "/app/"
+    }
+  },
   "dependencies": {
     "chai": "^1.9.1",
     "chalk": "^0.5.1",
@@ -24,6 +31,9 @@
     "sync-prompt": "^0.4.1"
   },
   "devDependencies": {
+    "mocha-lcov-reporter": "0.0.1",
+    "coveralls": "^2.11.1",
+    "blanket": "^1.1.6",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
