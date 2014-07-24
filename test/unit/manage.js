@@ -39,12 +39,27 @@ describe('Renter', function(){
       expect(socialWorker.cash).to.be.within(250, 850);
     });
   });
-  /*
-  describe('#payrent', function(){
+
+  describe('#payRent', function(){
     it('Should pay rent', function(){
       var coder = new Renter ('Michael', 20, 'Male', 1000, false, 'Coder');
-      coder.work();
-      expect 
+      coder.cash = 2000;
+      coder.payRent('750');
+      expect(coder.cash).to.equal(1250);
+      expect(coder.isEvicted).to.equal(false);
     });
-  }); */
+  });
+  describe('#party', function(){
+    it('Should cause no disturbance from parties', function(){
+      var coder = new Renter ('Michael', 20, 'Male', 1000, false, 'Coder');
+        while(true){
+          coder.party();
+
+          if(!coder.isEvicted){
+            break;
+          }
+    }
+      expect(coder.isEvicted).to.equal(false);
+    });
+  });
 });

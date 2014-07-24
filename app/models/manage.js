@@ -38,6 +38,25 @@ function randBetween(low, high){
   return Math.random() * (high - low) + low;
 }
 
+Renter.prototype.payRent = function(amount){
+  amount = parseInt(amount);
+
+  if(this.cash === amount){
+    this.isEvicted = true;
+  }else{
+    this.isEvicted = false;
+    this.cash -= amount;
+  }
+};
+
+Renter.prototype.party = function(){
+  if(this.isEvicted){return;}
+
+  var volume = Math.floor(Math.random() * 10) + 1;
+  this.isEvicted = volume > 8;
+};
+
+
 
 
 
