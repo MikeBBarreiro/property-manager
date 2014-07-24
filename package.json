@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "description": "A Property-Managment app",
   "main": "manage.js",
-  "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
+  "bin": {
+    "coveralls": "./node_modules/coveralls/bin/coveralls.js"
+  },
   "scripts": {
     "test": "mocha test --recursive -R spec",
-    "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
+    "coveralls": "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "chai": "^1.9.1",
     "chalk": "^0.5.1",
     "mocha": "^1.21.0",
+    "mongodb": "^1.4.7",
     "request": "^2.39.0",
     "sync-prompt": "^0.4.1"
   },
