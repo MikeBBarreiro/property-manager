@@ -11,7 +11,6 @@ Room.prototype.area = function(){
 };
 
 Room.prototype.cost = function(){
-  return this.area() *5;
+  return this.area() * 5;
 };
-
 module.exports = Room;
