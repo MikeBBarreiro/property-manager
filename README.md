@@ -7,10 +7,11 @@ property-manager
 [![Build Status](https://travis-ci.org/MikeBBarreiro/property-manager.svg?branch=master)](https://travis-ci.org/MikeBBarreiro/property-manager)
 revenue
 .tenents
-```
-### About
-Property Manager is a Node.js application to be used at an apartment complex. It allows the owner to more easily manage the operations of the complex.
 
+### About
+```
+Property Manager is a Node.js application to be used at an apartment complex. It allows the owner to more easily manage the operations of the complex.
+```
 ### Models
 ```
 Room
@@ -55,7 +56,7 @@ rooms
 .cost
 - Mocha
 - MongoDB
-
+```
 ### Running Tests
 ```bash
 $ npm install
