@@ -64,7 +64,7 @@ $ npm test
 ```
 
 ### Contributors
-- [Michael Barreiro](https://github.com/MikeBBarreiro)
+- [Michael Barreiro](https://www.linkedin.com/profile/view?id=221590218&trk=nav_responsive_tab_profile_pic)
 
 ### License
 [MIT](LICENSE)
